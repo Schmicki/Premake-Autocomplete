@@ -95,7 +95,7 @@ const functions = [
         label: "C Project",
         snippet: [
             "project \"${1:MyProject}\"",
-            "\tkind \"${2:ConsoleApp|WindowedApp|SharedLib|StaticLib|Makefile}\"",
+            "\tkind \"${2|ConsoleApp,WindowedApp,SharedLib,StaticLib,Makefile|}\"",
             "\tlanguage \"C\"",
             "\tcdialect \"C99\"",
             "",
@@ -115,7 +115,7 @@ const functions = [
         label: "C++ Project",
         snippet: [
             "project \"${1:MyProject}\"",
-            "\tkind \"${2:ConsoleApp|WindowedApp|SharedLib|StaticLib|Makefile}\"",
+            "\tkind \"${2|ConsoleApp,WindowedApp,SharedLib,StaticLib,Makefile|}\"",
             "\tlanguage \"C++\"",
             "\tcppdialect \"C++17\"",
             "",
@@ -143,7 +143,7 @@ const functions = [
     genFunc("architecture", [
         "universal", "x86", "x86_64", "ARM", "ARM64", "RISCV64",
         "loongarch64", "wasm32", "wasm64", "e2k", "armv5", "armv7",
-        "aarch64", "mips", "mips64", "i386", "armd64", "x32", "x64"
+        "aarch64", "mips", "mips64", "i386", "amd64", "x32", "x64"
     ]),
     {
         label: "assemblydebug",

@@ -1,3 +1,6 @@
+# VSCode Extension Packages
+*.vsix
+
 # Logs
 logs
 *.log
